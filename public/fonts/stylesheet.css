@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Brooklyn';
+    src: url('Brooklyn-Bold.eot');
+    src: url('Brooklyn-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Brooklyn-Bold.woff2') format('woff2'),
+        url('Brooklyn-Bold.woff') format('woff'),
+        url('Brooklyn-Bold.ttf') format('truetype'),
+        url('Brooklyn-Bold.svg#Brooklyn-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brooklyn';
+    src: url('Brooklyn-Heavy.eot');
+    src: url('Brooklyn-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('Brooklyn-Heavy.woff2') format('woff2'),
+        url('Brooklyn-Heavy.woff') format('woff'),
+        url('Brooklyn-Heavy.ttf') format('truetype'),
+        url('Brooklyn-Heavy.svg#Brooklyn-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cosmetic';
+    src: url('Cosmetic-Regular.eot');
+    src: url('Cosmetic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Cosmetic-Regular.woff2') format('woff2'),
+        url('Cosmetic-Regular.woff') format('woff'),
+        url('Cosmetic-Regular.ttf') format('truetype'),
+        url('Cosmetic-Regular.svg#Cosmetic-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brooklyn Normal';
+    src: url('Brooklyn-Normal.eot');
+    src: url('Brooklyn-Normal.eot?#iefix') format('embedded-opentype'),
+        url('Brooklyn-Normal.woff2') format('woff2'),
+        url('Brooklyn-Normal.woff') format('woff'),
+        url('Brooklyn-Normal.ttf') format('truetype'),
+        url('Brooklyn-Normal.svg#Brooklyn-Normal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Belfast';
+    src: url('Belfast-Regular.eot');
+    src: url('Belfast-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Belfast-Regular.woff2') format('woff2'),
+        url('Belfast-Regular.woff') format('woff'),
+        url('Belfast-Regular.ttf') format('truetype'),
+        url('Belfast-Regular.svg#Belfast-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cosmetic';
+    src: url('Cosmetic-Light.eot');
+    src: url('Cosmetic-Light.eot?#iefix') format('embedded-opentype'),
+        url('Cosmetic-Light.woff2') format('woff2'),
+        url('Cosmetic-Light.woff') format('woff'),
+        url('Cosmetic-Light.ttf') format('truetype'),
+        url('Cosmetic-Light.svg#Cosmetic-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cosmetic';
+    src: url('Cosmetic-Thin.eot');
+    src: url('Cosmetic-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Cosmetic-Thin.woff2') format('woff2'),
+        url('Cosmetic-Thin.woff') format('woff'),
+        url('Cosmetic-Thin.ttf') format('truetype'),
+        url('Cosmetic-Thin.svg#Cosmetic-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

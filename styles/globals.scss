@@ -1,0 +1,76 @@
+@import "./base/tailwind";
+
+body {
+  -webkit-backface-visibility: hidden;
+}
+
+body,
+html {
+  @apply font-brooklynNormal;
+}
+
+.main {
+  &__heading {
+    @apply block font-cosmetic uppercase text-[10vw] font-light leading-none text-center;
+
+    &--sub {
+      @apply block font-belfast text-[9vw];
+
+      span {
+        @apply p-6;
+      }
+    }
+  }
+
+  &__heading,
+  &__heading--sub {
+    display: inherit;
+  }
+}
+
+.image-container {
+  width: 100%;
+  > div {
+    position: unset !important;
+  }
+}
+
+.fp-watermark {
+  display: none;
+}
+
+.c-scrollbar {
+  opacity: 0 !important;
+}
+.__rcs-handle-button {
+  div {
+    color: white;
+  }
+
+  div + div {
+    color: inherit;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1536px) {
+  .menu {
+    &--griditem {
+      width: 15vw;
+    }
+    &--title {
+      font-size: 1.4rem !important;
+    }
+  }
+}
+
+@media (min-width: 1536px) and (min-height: 900px) {
+  .menu {
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+    &--grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+    &--griditem {
+      width: 15vw !important;
+    }
+  }
+}

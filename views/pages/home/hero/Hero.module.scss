@@ -1,0 +1,22 @@
+.image {
+  &__intro {
+    --introMaskPosition: right;
+
+    mask-image: linear-gradient(to left, #fff 40%, transparent 60%);
+    mask-size: 250%;
+    mask-position: var(--introMaskPosition);
+    will-change: mask-position;
+
+    transition: mask-position 3s linear;
+  }
+  &__sketch {
+    --sketchMaskPosition: left;
+
+    mask-image: linear-gradient(to right, transparent 40%, #fff 60%);
+    mask-size: 250%;
+    mask-position: var(--sketchMaskPosition);
+    will-change: mask-position;
+
+    transition: mask-position 3s linear;
+  }
+}

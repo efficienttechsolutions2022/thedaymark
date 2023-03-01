@@ -1,0 +1,148 @@
+@use "../../styles/base/mixin.scss" as mixin;
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7rem 0 2rem;
+}
+
+.formContainer {
+  --width: 90%;
+  width: min(var(--width), 59.5rem);
+  margin-inline: auto;
+
+  @include mixin.tablet {
+    --width: 70%;
+  }
+  @include mixin.desktoplg {
+    --width: 90%;
+  }
+
+  .formcontent {
+    .heading {
+      padding-bottom: clamp(1.2rem, 2vw, 2.75rem);
+      h2 {
+        text-align: center;
+      }
+      p {
+        max-width: 250px;
+      }
+    }
+    .formarea {
+      width: 100%;
+      .errors {
+        display: block;
+        margin-bottom: 10px;
+      }
+      .holdfield {
+        margin: 0rem 0px 1rem;
+        position: relative;
+        .label {
+          font-weight: 500;
+          font-size: 0.7rem;
+          position: absolute;
+          top: 20px;
+          left: 0px;
+          width: 100%;
+          font-size: 1rem;
+          font-family: var(--ff-body);
+          height: 100%;
+          cursor: text;
+          transition: 0.2s ease-in-out;
+          &.move {
+            top: 0px;
+            font-size: 0.6rem;
+            height: auto;
+            font-weight: 700;
+          }
+        }
+        .contactfield {
+          width: 100%;
+          border: 0px;
+          border-bottom: 1px solid var(--clr-light);
+          background-color: transparent;
+          color: var(--clr-light);
+          padding: 1rem 1rem 0.4rem 0rem;
+          font-size: 1rem;
+          font-family: var(--ff-body);
+          text-transform: uppercase;
+          outline: 0;
+        }
+      }
+      .button {
+        border: none;
+        cursor: pointer;
+        font-family: var(--ff-heading);
+        margin-top: 1.25rem;
+      }
+    }
+  }
+}
+.thankyoucontent {
+  text-align: center;
+  font-family: var(--ff-heading);
+}
+
+.largeText {
+  font-family: var(--ff-heading);
+  font-size: clamp(1.2rem, 1vw + 0.8rem, 1.875rem);
+}
+
+.ptb150 {
+  padding: 5.375rem 0;
+
+  @include mixin.desktop {
+    padding: 7.375rem 0;
+  }
+  @include mixin.desktoplg {
+    padding: 9.375rem 0;
+  }
+}
+
+.pt10 {
+  padding-top: 8rem;
+  @include mixin.tablet {
+    padding-top: 10rem;
+  }
+}
+
+.downloadLink {
+  display: flex;
+  align-items: center;
+  gap: 1.4375rem;
+  padding-top: 2.75rem;
+
+  &:hover {
+    .arrowWrapper {
+      transform: translate(10px);
+    }
+  }
+}
+
+.text {
+  width: min-content;
+  font-size: 0.8rem;
+
+  @include mixin.tablet {
+    width: unset;
+    font-size: inherit;
+  }
+}
+
+.arrowWrapper {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  transition: 0.2s ease;
+
+  @include mixin.tablet {
+    width: 3rem;
+    height: 2rem;
+  }
+
+  @include mixin.desktoplg {
+    width: 4.5625rem;
+    height: 2.6875rem;
+  }
+}
